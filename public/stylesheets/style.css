@@ -1,0 +1,217 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+
+/* Login form */
+body {
+  color: #000;
+  background-image: linear-gradient(to right, #bd2de8, #fae298); 
+}
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
+}
+.card {
+  border: none;
+}
+.card0{
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  user-select: none;
+}
+.card1 {
+  width: 50%;
+  height: 440px;
+  padding: 40px 30px 10px 30px;
+  border-radius: 0;
+  background: rgba(252, 251, 248, 0.1);
+  backdrop-filter: blur(7px);
+}
+.card2 {
+  width: 50%;
+  height: 440px;
+  border-radius: 0;
+  background: rgba(252, 251, 248, 0.1);
+  backdrop-filter: blur(7px);
+}
+.heading {
+  margin-bottom: 30px !important;
+  color: #1b1b1b;
+  font-weight: 700;
+  font-size: 3rem;
+  text-wrap: balance;
+}
+.msg-info {
+  padding-left: 15px;
+  margin-bottom: 30px;
+  color: #0000009e;
+}
+.btn-color {
+  border-radius: 50px !important;
+  color: #fff !important;
+  background-image: linear-gradient(to right, #FFD54F, #D500F9) !important;
+  padding: 15px !important;
+  cursor: pointer !important;
+  border: none !important;
+  margin-top: 40px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+  transition: all 0.3s ease !important; 
+}
+.btn-color:hover {
+  color: #fff !important;
+  background-image: linear-gradient(to right, #D500F9, #FFD54F) !important;
+  transform: translateY(-5px) !important; 
+    box-shadow: rgba(0, 0, 0, 0.15) 2.5px 2.5px 3px !important;
+}
+#loginphrase2{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+#loginphrase2 span{
+  display: block;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+}
+
+#sportmintway{
+  text-transform: lowercase !important;
+}
+
+/* MAIN APP STYLES */
+#mainapp{
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+#navtab{
+  width: 30%;
+  padding: 16px;
+  border-radius: 0;
+  background: rgba(252, 251, 248, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.navbar ul{
+  list-style: none !important;
+}
+.navbtn{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+  transition: all 0.3s ease !important; 
+}
+.navbtn:hover{
+  transform: translateY(-5px); 
+  box-shadow: rgba(0, 0, 0, 0.15) 2.5px 2.5px 3px !important;
+}
+.nav-tabs{
+  border: none !important;
+}
+
+/* THIS IS CONTENT TAB STYLES */
+#contenttab{
+  width: 70%;
+  height: 100%;
+  overflow: scroll;
+  border-radius: 0;
+  background: rgba(252, 251, 248, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+#homelist{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.nftassets{
+  width: 200px;
+  height: 250px;
+  /* background: rgba(255, 255, 255, 0.3); */
+  background-image: linear-gradient(to right, #f4dd93, #dc5af3) !important;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.nftassets_img{
+  height: 190px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.nftassets img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mandbbtn{
+  display: flex;
+  justify-content: space-around;
+}
+.mintbtn{
+  background-color: #D500F9;
+}
+.buybtn{
+  background-color: #fae298;
+}
+.btn-sm{
+  border: none;
+  color: #1b1b1b;
+  width: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+  transition: all 0.3s ease !important; 
+}
+.btn-sm:hover{
+  transform: translateY(-3px); 
+  box-shadow: rgba(0, 0, 0, 0.15) 2.5px 2.5px 3px !important;
+}
+
+#menu2content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+  .card1 {
+      width: 100%;
+      padding: 40px 30px 10px 30px;
+  }
+
+  .card2 {
+      width: 100%;
+  }
+
+  .right {
+      margin-top: 100px !important;
+      margin-bottom: 100px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px !important;
+  }
+
+  .card2 {
+      padding: 50px;
+  }
+
+  .right {
+      margin-top: 50px !important;
+      margin-bottom: 50px !important;
+  }
+}

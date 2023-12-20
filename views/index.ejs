@@ -1,0 +1,178 @@
+<%-include('partials/header')-%>
+
+  <body>
+    <div class="container px-1 py-1 mt-1">
+      <div class="card card0">
+        <div class="d-flex flex-lg-row flex-column-reverse" id="mainapp">
+          <div id="navtab">
+            <nav class="navbar">
+              <ul class="nav nav-tabs" role="tablist">
+                <li>
+                  <button class="btn-block btn-color navbtn nav-link" data-attribute="homeTab" data-bs-toggle="tab"
+                    href="#home">
+                    <i class="fas fa-home fa-lg"></i>&nbsp; HOME</button>
+                </li>
+                <li>
+                  <button class="btn-block btn-color navbtn nav-link" onclick="window.location.href='https://testnets.opensea.io/assets/sepolia/0x944EE5a1684039da75C199a48Ac6C7eE5c31379D/';">
+                    <i class="fas fa-clipboard-list fa-lg"></i>&nbsp; VIEW YOUR COLLECTION</button>
+                </li>
+                <li>
+                  <button class="btn-block btn-color navbtn nav-link" data-attribute="howToTab" data-bs-toggle="tab"
+                    id="howToTabBtn" href="#menu2">
+                    <i class="fas fa-question"></i>&nbsp; HOW THIS WORKS</button>
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <button class="btn-block btn-color" id="logout">logout</button>
+            </div>
+          </div>
+          <div id="contenttab">
+            <div class="tab-content">
+              <div class="tab-pane container active p-2" id="home">
+                <div id="homelist">
+                <% console.log('account value:', locals.useraccount); %>
+                  <div class="nftassets">
+                    <div class="nftassets_img" >
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmQuqfbAjVwGW3pfAmXvpjDwf7VtbbY5q89csX4Kxxx85w?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn" id="0" onclick="window.mintNFT(0);">Mint 0</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img">
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmPSjdCJGLoKiu48mYsAB1TdDyj9EbxZ14YktNZBbfkPNe?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn" id="1" onclick="window.mintNFT(1);">Mint 1</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img">
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmUCvL5jwVJnEJyJJGSTNrFWFAG4pfiGofAQXwCWqnx7HB?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn" id="2" onclick="window.mintNFT(2);">Mint 2</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img">
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmVk8g11bP5kMC4zP3sHRpuXV2YasDBpuMTZwgoknFJGvA?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn"  id="3" onclick="window.mintNFT(3);">Mint 3</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img">
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmeBFkSSc8sAuR3wn4XSt8xvTQZADwF1h6hrkaaBpRa6CP?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn" id="4" onclick="window.mintNFT(4);">Mint 4</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img" >
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmZ3rjM6jYXjpuF9XvKFgrFS7hP7CFevqNR5mwN2MGusUq?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn" id="5" onclick="window.mintNFT(5);">Mint 5</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img">
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmYUrZnnxNy62VMZGwgcwy1SwgQHfAAtU9Jff8XmRBJzxH?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn" id="6" onclick="window.mintNFT(6);">Mint 6</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img">
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmbJUUVt161VAumnyc77DH8c1qCw9jbNcRkewCgk82DraM?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn"  id="7" onclick="window.mintNFT(7);">Mint 7</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img">
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmeaSQrsBiG7jQ8caHFo2ThBxNesQpA3Eyqo5y9HuhdXHK?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn" id="8" onclick="window.mintNFT(8);">Mint 8</button>
+                    </div>
+                  </div>
+                  <div class="nftassets">
+                    <div class="nftassets_img">
+                      <img
+                        src="https://azure-mad-caterpillar-607.mypinata.cloud/ipfs/QmZEp67s2ageZZxkYADPL5iHh44MrWYvGS68EaWWAjEADX?pinataGatewayToken=HlnI8C0Qh25QAoX5k140gAF8TUxldI2BSmuLeo-gWrmc-e2psi0Bzqsn2DJxCtpM"
+                        alt="NFTASSET">
+                    </div>
+                    <div class="mt-2 mandbbtn">
+                      <button class="btn btn-sm mintbtn" id="9" onclick="window.mintNFT(9);">Mint 9</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane container fade" id="menu1">
+                Display NFTs
+              </div>
+              <div class="tab-pane container text-white fade p-2" id="menu2">
+                <div id="menu2content"><h2>🌟 Welcome to SportMinter🌟</h2>
+
+                <p>Step into the Digital Arena of Sports Collectibles!</p>
+
+                <h4>Browse & Choose:</h4> 
+                <p>Check out our handpicked selection of epic sports moments!</p>
+
+                <h4>Mint with a Click:</h4>
+                <p> Found your favorite? Hit 'Mint' to make it yours!</p>
+
+                <h4>Celebrate:</h4> 
+                <p>Voilà! You’re now the proud owner of a unique sports NFT. Share your catch with the world!</p>
+
+              <p>🚀 Easy, Fun, and All About Sports! Start Your Collection Today! 🚀</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/javascripts/Web3.js"></script>
+  <script>
+    initializeWeb3();
+    etherio();
+    document.getElementById('logout').addEventListener('click', function () {
+      fetch('/logout', {
+        method: 'POST'
+      })
+        .then(() => {
+          window.location.href = '/';
+        })
+        .catch((error) => {
+          console.error("Error logging out:", error);
+        });
+    });
+  </script>
+  <%-include('partials/footer')-%>

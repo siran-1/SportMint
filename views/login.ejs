@@ -1,0 +1,62 @@
+<%-include('partials/header')-%>
+<div class="container px-1 py-1 mt-3">
+    <div class="card card0">
+        <div class="d-flex flex-lg-row flex-column-reverse">
+            <div class="card card1">
+                <div class="row justify-content-center my-auto">
+                    <div class="col-md-8 col-10 text-center">
+                        <h3 class="text-center heading text-white">We are SportMint😎</h3>
+                        <div class="row justify-content-center my-3 px-3">
+                            <span class="msg-info text-center text-white">Please login using MetaMask🔑</span>
+                            <button class="btn-block btn-color" id="loginbtn">Login to SportMint</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="my-auto mx-md-2 right">
+                    <div class="text-white"id="loginphrase2">
+                        <span>Collect✌️</span><span>Trade🫴</span><span>Own🫳</span><span id="sportmintway">🤓The SportMint Way...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+   const sendAddressToServer = async (address) => {
+    try {
+        const response = await fetch('/create-session', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ address: address })
+        });
+        const data = await response.json();
+        if (data.success) {
+            console.log(data.message);
+            window.location.href = '/app'; 
+        } else {
+            console.log(data.message);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+};
+    document.getElementById('loginbtn').addEventListener('click', async () => {
+            if (typeof window.ethereum !== 'undefined') {
+                try {
+                    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                    const account = accounts[0];
+                    console.log('Connected account:', account);
+                    sendAddressToServer(account);
+                } catch (error) {
+                    console.error(error);
+                }
+            } else {
+                console.log('MetaMask is not installed!');
+            }
+        });
+</script>
+<%-include('partials/footer')-%>
